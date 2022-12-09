@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add new article</title>
+    <style>
+         * body {
+            width: 30%;
+            height: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        * {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="/add_article_handler" method="post">
+        <div>
+            <table>
+                <br><br>
+                <label for="heading">title: </title></label>
+                <input type="text" id="heading" name="heading" />
+                <br>
+
+                <label for="name">authors: </label>
+                <input type="text" id="name" name="name" />
+                <br>
+                <label for="Summary">abstract: </label>
+                <input type="text" id="Summary" name="Summary" />
+                <br>
+                <label for="linkk">link: </label>
+                <input type="text" id="linkk" name="linkk" />
+                <br>
+                <label for="code">code: </label>
+                <input type="password" id="code" name="code" />
+            </table>
+        </div>
+        <div>
+            <br>
+            <input type="submit" value="Add" />
+        </div>
+    </form>
+</body>
+
+</html>
